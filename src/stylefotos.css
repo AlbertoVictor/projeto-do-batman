@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: black;
+}
+
+header {
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(29, 29, 29);
+}
+
+li {
+    display: flex;
+    align-items: center;
+    
+}
+
+a {
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: 0.5s;
+}
+a:hover {
+    color: #d21617;
+}
+
+.h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding-top: 20px;
+}
+
+section {
+   padding: 60px;
+}
+
+.cards{
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    row-gap: 40px;
+    column-gap: 20px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.card:hover {
+    flex: 5;
+}
+
+.banner-1 {
+    background-image: url(https://r1.ilikewallpaper.net/iphone-12-pro-max-wallpapers/download-144551/the-batman-2022-movie-4k.jpg);
+}
+
+.banner-2 {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BN2MwNTI4ODQtN2YyYi00NWUxLWI1OGYtMjhhZDllN2VkNWMxXkEyXkFqcGdeQXVyODUxNjcxNjE@._V1_.jpg);
+}
+.banner-3 {
+    background-image: url(https://wallpapercave.com/wp/wp9429736.jpg);
+}
+.banner-4 {
+    background-image: url(https://www.ixpap.com/images/2022/03/Batman-2022-Wallpaper-15-500x889.jpg);
+}
+.banner-5 {
+    background-image: url(https://4kwallpapers.com/images/wallpapers/the-batman-2022-movies-dc-comics-red-background-2560x1440-6775.jpg);
+}
+.banner-6 {
+    background-image: url(https://wallpapercave.com/wp/wp9429752.jpg);
+}
+.banner-7 {
+    background-image: url(https://images.hdqwalls.com/download/the-batman-2022-5k-q8-1920x1080.jpg);
+}
+.banner-8 {
+    background-image: url(https://images6.fanpop.com/image/photos/44100000/The-Batman-2022-Movie-Poster-the-batman-movie-44192643-2048-1038.jpg);
+}
+@media (max-width: 768px){
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        row-gap: 40px;
+        column-gap: 20px;
+    }
+    .card {
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .card:hover {
+        transform: scale(1.06);
+    }
+
+}
+@media (max-width: 500px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        row-gap: 40px;
+        column-gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .card:hover {
+        transform: scale(1.06);
+    }
+}
